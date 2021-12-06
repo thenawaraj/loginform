@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="Style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+<main>
+	<section>
+		<div class="card form-card login-mode">
+			<div class="backdrop"></div>
+			<div class="container sign-up-container">
+				<div class="login-message message slide-left">
+					<h1>Welcome Back!</h1>
+					<p>To keep connected with us please </p>
+					<p>login with your personal info</p>
+				<button class="btn-signup-right"onclick="toggleClass()">Sign up</button>
+				</div>
+				<div class="sign-up-form form slide-right">
+					<form action="#">
+						<h1>Create Account</h1>
+						<div class="social-container">
+							<a href="#" class="social"><i class='bx bxl-facebook-circle'></i></a>
+							<a href="#" class="social"><i class='bx bxl-google-plus' ></i></a>
+							<a href="#" class="social"><i class='bx bxl-linkedin' ></i></a>
+						</div>
+						<span>or use your email for registration</span>
+						<input type="text"  class="input-type" placeholder="Name" />
+						<input type="email" class="input-type"  placeholder="Email" />
+						<input type="password" class="input-type" placeholder="Password" />
+						<button  class="btn-signup-left">Sign Up</button>
+					</form>
+				</div>
+			</div>
+			<div class="container login-container">
+				<div class="sign-up-message message slide-left">
+					<h1>Sign in</h1>
+						<div class="social-container ">
+							<a href="#" class="social"><i class='bx bxl-facebook-circle'></i></a>
+							<a href="#" class="social"><i class='bx bxl-google-plus' ></i></a>
+							<a href="#" class="social"><i class='bx bxl-linkedin' ></i></a>
+						</div>
+						<span>or use your account</span>
+						<input type="email" class="input-type"placeholder="Email" />
+						<input type="password" class="input-type"placeholder="Password" />
+						<a href="#" class="forget-pass">Forgot your password?</a>
+						<button class="btn-signin-right" >Sign In</button>
+				</div>
+				<div class="login-form form slide-right">
+					<form action="#">
+						<h1>Hello, Friend!</h1>
+						<p>Enter your personal details and </p>
+							<p>start journey with us</p>
+						<button class="btn-signin-right right-btn" onclick="toggleClass()" >Sign In</button>
+					</form>
+				</div>
+			</div>	
+
+
+		</div>
+	</section>
+</main>
+</body>
+<script type="text/javascript">
+	const toggleClass=()=>{
+		console.log('inside');
+		document.querySelector('.form-card').
+		classList.toggle('login-mode');
+		document.querySelector('.form-card').
+		classList.toggle('sign-up-mode')
+	}
+</script>
+</html>
